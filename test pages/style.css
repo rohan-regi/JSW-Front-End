@@ -33,10 +33,13 @@ body {
 }
 .card-title {
   color: white;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 .introduction {
   color: #16469d;
   font-weight: 400;
+  margin-bottom: 1em;
 }
 .card {
   margin-top: 2em;
@@ -44,6 +47,10 @@ body {
   border-color: black;
   background-color: #16469d;
   border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 .card-text {
   color: white;
@@ -85,6 +92,30 @@ p {
   text-align: center;
   width: 60%;
   margin-bottom: 1em;
+}
+
+.ip {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+.op {
+  max-width: 180px;
+  width: 100%;
+  padding-bottom: 0.3em;
+}
+.ep {
+  max-width: 180px;
+  width: 100%;
+  text-align: left;
+}
+
+#submit {
+  max-width: 600px;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 /*---Media Queries --*/
