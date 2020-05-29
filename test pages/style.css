@@ -21,9 +21,10 @@
 body {
   background-color: #ffffff;
 }
-.introduction {
-  color: white;
+
+.introduction1 {
   font-weight: 400;
+  margin-bottom: 3rem;
 }
 .line-200,
 .light-100 {
@@ -35,6 +36,7 @@ body {
 }
 .introduction {
   color: #16469d;
+  font-weight: 400;
 }
 .card {
   margin-top: 2em;
@@ -65,7 +67,6 @@ h5 {
 p {
   color: #16469d;
   font-weight: 600;
-  margin-bottom: 2em;
 }
 
 .gap {
