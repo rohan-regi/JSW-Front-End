@@ -171,4 +171,17 @@ p {
     font-weight: 400;
     margin-bottom: 3rem;
   }
+  .op {
+    max-width: 150px;
+    width: 100%;
+    padding-bottom: 0.3em;
+  }
+  .ep {
+    max-width: 150px;
+    width: 100%;
+    text-align: left;
+  }
+  .text {
+    max-width: 150px;
+  }
 }
