@@ -100,12 +100,12 @@ p {
   text-align: center;
 }
 .op {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   padding-bottom: 0.3em;
 }
 .ep {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   text-align: left;
 }
@@ -177,12 +177,12 @@ p {
     padding-bottom: 0.3em;
   }
   .ep {
-    max-width: 150px;
+    max-width: 250px;
     width: 100%;
     text-align: left;
   }
   .text {
-    max-width: 150px;
+    max-width: 250px;
     width: 10%;
   }
 }
