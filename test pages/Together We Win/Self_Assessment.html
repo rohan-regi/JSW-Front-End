@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SAQ-Teamwork</title>
+	 <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="../style.css" rel="stylesheet" />
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top tth">
+      <div class="container-fluid">
+        <div class="title1">
+          <img src="../../img/jsw-steel2.png" class="JSWlogo" alt="" />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a style="color: white;" class="nav-link" href="../../index.html"
+                ><svg
+                  class="bi bi-house-fill"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                  />
+                </svg>
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#"
+                ><svg
+                  aria-hidden="true"
+                  width="1em"
+                  height="1em"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="address-book"
+                  class="svg-inline--fa fa-address-book fa-w-14"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"
+                  ></path>
+                </svg>
+                Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Button</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Button</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4 links introduction">
+            SAQ - Teamwork
+          </h1>
+          <p>Rate yourself on a scale of 1 to 5</p>
+        </div>
+        <hr class="line-200" />
+      </div>
+       <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              Gender
+            </h4>
+            <form class="ip">
+              <label for="gender" class="ep">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                value="Male"
+                checked
+                class="op"
+              />
+              <br />
+              <label for="gender" class="ep">Female</label>
+              <input type="radio" name="gender" value="Female" class="op" />
+              <br />
+              <label for="gender" class="ep">Prefer not to say</label>
+              <input
+                type="radio"
+                name="gender"
+                value="Prefernottosay"
+                class="op"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              My team has a meaningful, shared purpose.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I clearly understand my role within the team 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              Team problem-solving results in effective solutions.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I appreciate the unique capabilities of my team members.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I take personal responsibility for the effectiveness of my team 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              Working on my team aspires me to do my best. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I have the skills I need to do my job for the team effectively
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              My team sets and meets challenging goals.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              When an individual's role changes, I make an intentional effort to clarify it for everyone on the team.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I address and resolve issues quickly
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I am open and honest with the communication in my group.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I take initiative to resolve issues between the team members without involving the team leader. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I have a strong sense of accomplishment regarding my work.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I always ask myself, "How can we do better tomorrow what we did today?" 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              As a part of my team, I always produce strong, measurable results. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I avoid duplication of efforts and make sure that everyone is clear about who is doing what.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              My team has mechanisms in place to monitor its results.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I trust the members of my team. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+            I spend very little time complaining about things I cannot control.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I frequently go beyond what is required and do not hesitate to take initiative 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              As a team, we are continually working to improve key performance indicators 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I make sure my work helps the organization achieve its goals 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              When team members' roles change, specific plans are implemented to help them assume their new responsibilities
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I work with a great deal of flexibility so that I can adapt to changing needs.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I help other team members deal with problems or resolve issues. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I seek and give other team members with constructive feedback. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              As a team, we work to attract and retain top performers. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              We work to ensure that we are using the best practices. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              The mission and goals of my team are well aligned with the organization's mission and goals. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              Overlapping or shared tasks and responsibilities do not create problems for team members. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              When we choose consensus decision-making, we do it effectively 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I am able to work through differences of opinion without damaging relationships.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I am sure about what is expected of me and take pride in a job well done.
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I am excited about the contribution it is making to the organization's competitive viability 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-12 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              I embrace continuous improvement as a way of life. 
+            </h4>
+            <form class="ip" action="" method="">
+              <label for="scale" class="ep">1 - Strongly Disagree</label>
+              <input type="radio" name="scale" value="1" class="op" /><br />
+              <label for="scale" class="ep">2 - Disagree</label>
+              <input type="radio" name="scale" value="2" class="op" /><br />
+              <label for="scale" class="ep">3 - Neutral</label>
+              <input type="radio" name="scale" value="3" class="op" /><br />
+              <label for="scale" class="ep">4 - Agree</label>
+              <input type="radio" name="scale" value="4" class="op" /><br />
+              <label for="scale" class="ep">5 - Strongly Agree</label>
+              <input type="radio" name="scale" value="5" class="op" />
+            </form>
+          </div>
+        </div>
+      </div>
+       <div class="text-center">
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          class="btn btn-dark col-12 text-align"
+        />
+      </div>
+    </div>
+    <hr class="line-200" />
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2>Contact Details</h2>
+            <hr class="light-100" />
+            <p>Telephone Number - 0000000000</p>
+            <p>Email Address - JSWSteel@example.com</p>
+            <p>Kudligi Rd, Toranagallu,</p>
+            <p>Karnataka, PIN - 583123</p>
+          </div>
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5>&copy; JSW Steel L.T.D</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
